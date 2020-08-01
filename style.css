@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  cursor: default;
+  background: url('tp_images_fonts/images/yellow_background.png');
+  margin: 0 100px ;
+  padding: 0;
+}
+.c-white {
+  color:#f0f0f0;
+}
+li, a, ul {
+  text-decoration: none;
+  list-style: none;
+  color:#000;
+}
+.bg-image {
+  width: 100%;
+}
+@font-face {
+  font-family: dayrom;
+  src:url('tp_images_fonts/fonts/dayrom.woff');
+}
+@font-face {
+    font-family: ballpark;
+  src:url('tp_images_fonts/fonts/ballpark.woff');
+}
+header .logo-text {
+  margin-bottom: -15px;
+  font-size:1.2em;
+}
+.logo {
+  padding: 5px 10px;
+}
+.logo:hover,
+.logo-name:hover,
+.logo-text:hover {
+  opacity:0.9;
+  cursor: pointer;
+}
+.logo-name {
+  font-size:36px;
+  font-family: ballpark;
+
+}
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+font-family: dayrom;
+}
+.menu-bar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+.menu-item {
+  display: inline;
+  padding: 0 12px;
+}
+.menu-item a {
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #010;
+}
+header .line {
+  margin: 20px 0;
+   border-top: 3px solid transparent;
+  border-image:url('tp_images_fonts/images/line.png') 10 round;
+}
+.photo-section {
+  padding-bottom:20px;
+}
+.photo {
+  position: relative;
+  padding: -50px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.photo .baner {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+   background-color: rgba(0,0,0,0.5);
+     position: absolute;
+     bottom:5px;
+     left:0;
+     right:0;
+     padding: 0 20px;
+    height: 50px;
+}
+.baner p {
+  color: #f0f0f0
+}
+button {
+  text-align: center;
+  border:0;
+  padding:0;
+  margin:0;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+  border:1px solid rgba(255,255,255,0.1);
+}
+ .btn-art {
+  padding: 8px;
+  border-radius:5px;
+  background:#d20;
+  opacity: 0.9;
+  color:#fff;
+}
+.section {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+.article {
+  text-align: justify;
+}
+.article p, .author p {
+
+  padding: 10px 0;
+}
+.title-art {
+  display:flex;
+  padding-bottom: 20px;
+}
+.title-art img {
+  padding-right: 10px;
+}
+.author {
+  margin-top:-50px;
+  margin-left: 40px;
+  padding:20px 10px 20px 10px;
+  text-align: justify;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.author p {
+  font-size:.9em;
+  font-weight: 600;
+  color:white;
+}
+.photo .logo-img {
+  display:block;
+  position: relative;
+  margin: 10px auto;
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+.photo .trans-layer:hover {
+  background-color: rgba(0,0,0,0.1);
+
+}
+.photo .trans-layer {
+  display: block;
+  margin: 0 auto;
+   background-color: rgba(255,255,255,0);
+     position: absolute;
+     bottom:0px;
+     left:0;
+     right:0;
+     height:100%;
+     width:150px;
+
+    transition: 0.3s ease 0s;
+
+}
+.author h1 {
+  font-family: serif !important;
+  font-size:1.2em;
+  color:#fff;
+  text-shadow: 1px 1px rgba(10,10,10,0.6);
+}
+.social-icon {
+  display:flex;
+  padding: 0;
+  margin: 0 auto;
+}
+.footer {
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom:20px;
+}
+.footer h1 {
+  font-size:1.3em;
+  font-family: dayrom;
+  font-weight: 500;
+}
+.footer-line {
+  margin: 20px 0;
+   border-top: 3px solid transparent;
+  border-image:url('tp_images_fonts/images/line.png') 10 round;
+}
+.footer .pictures img {
+  border:1px solid rgba(0,0,0, 0.6);
+  height: 80px;
+}
+
+.friends {
+  text-align: left;
+}
+.friends h1 {
+  margin-left:40px;
+}
+.friend {
+  display:flex;
+  line-height: 1.2em;
+}
+.friend-col{
+    margin:0 30px;
+    border:none;
+}
+.footer .tweet p,
+.footer .pictures img,
+.footer .friends .friend {
+  margin:10px 0;
+  font-family: sans-serif;
+  font-size:.75em;
+}
+.social-icon .icon:hover,
+.pic-img:hover,
+.menu-bar .menu-item:hover,
+.baner a:hover{
+  opacity:0.9;
+  transition: 0.3s ease 0s;
+  cursor: pointer;
+}
+.friend-col li a {
+  color:rgba(255,0,0, 0.7);
+}
+.arrow-r {
+  width: 10px;
+  height: 10px;
+   background: url('tp_images_fonts/images/external_link.png') center no-repeat ;
+   padding:0 16px 0 0;
+white-space:nowrap;
+}
+ .author .icon {
+margin:0 2px;
+}
